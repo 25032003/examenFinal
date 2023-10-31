@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="org.example.CursosClass">
+        <table name="cursos" schema="public" catalog="postgres"/>
+        <attributes>
+            <id name="idCurso">
+                <column name="id_curso" precision="-1"/>
+            </id>
+            <basic name="nombreCurso">
+                <column name="nombre_curso" length="100"/>
+            </basic>
+            <basic name="profesor">
+                <column name="profesor" length="50"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>
